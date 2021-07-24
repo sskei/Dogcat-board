@@ -1,0 +1,105 @@
+header{
+    background: beige;
+   
+    height: 215px;
+    display: flex;
+ 
+    position: relative;
+}
+
+main{
+
+    background: blue;
+}
+
+footer{
+
+    background: violet;
+   
+    height: 310px;
+    margin: auto;
+    padding: 0 8px 0 8px; /* 각각 위 오른쪽 아래 왼쪽 */
+    display: flex;
+    flex-direction: column; /* 요소들을 수평정렬 */
+    font-size: 12px;   
+}
+
+
+a {
+    text-decoration: none; /* 기본 밑줄을 제거합니다 */
+    color: #888;
+  }
+
+a:hover {
+    text-decoration: underline; /* 마우스 커서가 올라갔을 때 밑줄을 생성합니다*/
+  }
+
+  
+
+
+
+.links { /* 링크들을 상단 우측에 위치시킵니다. */
+    position: absolute;
+    top: 0;
+    right: 60px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+
+  .menu{
+    border: 1px #000000;
+    margin: 30px 30px 0px 0px;
+    padding: 10px;
+}
+
+
+.img_logo {
+    margin-bottom: 12px;
+    width: 220px;
+    height: 65px;
+  }
+
+
+  header > nav {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: 100px;
+  }
+  .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 1px solid #f1f3f6;
+  }
+  .menu ul > li {
+    display: inline-block;
+    margin-left: 8px;
+  }
+  .menu ul > li:nth-child(-n + 7) > a { /* <ul>하위 7번째 <li>까지 각각 내부의 <a> 태그 접근 */
+    color: #03cf5d;
+  }
+  .menu ul > li > a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .bottom_box {
+    flex: 3;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  .bottom_box ul > li {
+    display: inline-block; /* 수평정렬 */
+    margin-left: 8px;
+  }
+  .bottom_box ul > li:last-child {
+    /* 마지막 li요소 (Naver Corp.) 굵게 */
+    font-weight: bold;
+  }
