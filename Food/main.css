@@ -2,6 +2,7 @@
 
 body{
   margin:0;
+  font-family: 'Source Sans Pro';
 }
 
 main{
@@ -34,14 +35,16 @@ a:hover {
   
 
 
-
 .links { /* 링크들을 상단 우측에 위치시킵니다. */
+    
     position: absolute;
     top: 0;
     right: 60px;
     margin: 10px;
     padding: 10px;
-    color:black;
+    justify-content: space-between;
+    
+    
   }
 
 
@@ -76,4 +79,86 @@ a:hover {
 .navbar_menu li{
 
   padding:8px 12px;
+}
+
+
+.navbar_menu li:hover
+{
+  background-color:yellow;
+  border-radius: 4px;
+}
+
+
+
+.navbar_icons
+
+{
+  list-style: none;
+  color: white;
+  display: flex;
+
+}
+
+.navbar_icons li
+
+{
+    padding: 12px;
+}
+
+
+
+/* footer */
+
+
+.footer_box
+{
+  
+  display: flex;
+  list-style:none;
+  /* 기호제거  */
+  padding-left:0px;
+}
+
+
+.footer_box li 
+
+{
+  padding: 8px;
+}
+
+
+
+/* 768일때 레이아웃 지정 */
+@media screen and(max-width: 768px) {
+
+  .navbar 
+  {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .navbar_menu
+  {
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    
+  }
+
+
+  .navbar_menu li{
+
+    width: 100px;
+    text-align: center;
+  }
+
+  .navbar_icons
+  {
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  
 }
